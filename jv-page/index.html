@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jv.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>JV Page</title>
+</head>
+<body class="bg-[url('./img/bg.png')] bg-center bg-cover bg-no-repeat bg-fixed overflow-x-hidden">
+  <!-- Navbar -->
+  <section class="bg-[#352CE8] py-3 max-[480px]:py-2 mt-8 max-[480px]:mt-5 mx-5 rounded-[50px] sticky top-2 z-10">
+    <nav class="flex justify-between items-center">
+      <div class="ml-12">
+        <img width="18%" src="./img/logo.png" alt="logo">
+      </div>
+      <div class="min-[768px]:flex min-[320px]:hidden justify-evenly items-center bg-white w-[38rem] py-4 rounded-[30px] mr-4">
+        <a href="#contest" class="smooth-scroll flex justify-center items-center gap-1 rounded-[30px]">
+          <p class="font-medium">contest</p>
+          <svg class="text-[#433AE9]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+          </svg>
+        </a>
+        <a href="#affiliate" class="smooth-scroll flex justify-center items-center gap-1 rounded-[30px]">
+          <p class="font-medium">Affiliate Link</p>
+          <svg class="text-[#433AE9]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+          </svg>
+        </a>
+        <a href="#promotion" class="smooth-scroll flex justify-center items-center gap-1 rounded-[30px]">
+          <p class="font-medium">Promotion Material</p>
+          <svg class="text-[#433AE9]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="container min-[768px]:hidden min-[320px]:flex flex-col items-end mr-10 mt-1 cursor-pointer" onclick="myFunction(this)">
+        <div class="bar1 w-9 h-1 bg-white mb-1 rounded-[20px]"></div>
+        <div class="bar2 w-9 h-1 bg-white mb-1 rounded-[20px]"></div>
+        <div class="bar3 w-9 h-1 bg-white mb-1 rounded-[20px]"></div>
+      </div>
+    </nav>
+    <div class="burger flex-col justify-center items-end mr-10 mt-5 gap-3">
+      <a href="#contest" class="smooth-scroll flex justify-center items-center gap-2 rounded-[30px]">
+        <p class="font-medium text-white">contest</p>
+        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+        </svg>
+      </a>
+      <a href="#affiliate" class="smooth-scroll flex justify-center items-center gap-2 rounded-[30px]">
+        <p class="font-medium text-white">Affiliate Link</p>
+        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+        </svg>
+      </a>
+      <a href="#promotion" class="smooth-scroll flex justify-center items-center gap-2 rounded-[30px]">
+        <p class="font-medium text-white">Promotion Material</p>
+        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="flex flex-col justify-center items-center">
+    <div class="">
+      <div class="flex flex-col justify-center items-center text-center mt-16 max-[992px]:mt-12 max-[768px]:mt-8 max-[480px]:mt-5 px-20 max-[992px]:px-16 max-[768px]:px-12 max-[480px]:px-5">
+        <h1 class="text-[3.25rem] px-12 max-[992px]:px-5 max-[992px]:text-[2.75rem] max-[768px]:text-[2.15rem] max-[480px]:text-[1.25rem] leading-[4rem] max-[992px]:leading-[3.5rem] max-[768px]:leading-[2.5rem] max-[480px]:leading-[1.5rem] font-bold">Introducing <span class="text-[#352CE8]">LEAD PLUS+</span>: <br> Your Ultimate Digital Solution for Building a Profitable Database with our Exclusive E-Book!</h1>
+        <div class="bg-[#352CE8] flex justify-center items-center py-2 px-10 max-[992px]:px-5 w-fit mt-4 rounded-[20px]">
+          <h3 class="text-white text-center font-medium text-[2rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.8rem]">Uncover 25 High-Converting E-book Niches in Online & Offline Businesses</h3>
+        </div>
+        <div class="flex justify-center items-center mt-16 mb-12 max-[768px]:my-8 max-[480px]:my-5">
+          <img class="w-[65rem] max-[992px]:w-[45rem] max-[768px]:w-[35rem] max-[480px]:w-[25rem]" src="./img/BoxMockup.png" alt="mockup">
+        </div>
+        <p class="text-[1.5rem] max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.65rem] leading-[2.5rem] max-[992px]:leading-[2rem] max-[768px]:leading-[1.5rem] max-[480px]:leading-[1rem] font-light text-[#636363] mt-8 max-[992px]:mt-6 max-[768px]:mt-4 max-[480px]:mt-2 px-32 max-[992px]:px-20 max-[768px]:px-16 max-[480px]:px-10">Transform Your Business with Lead Plus+ and Discover the Secrets to Create a High-Value Database with Our Comprehensive E-Book!</p>
+      </div>
+    </div>
+    <div class="flex justify-center items-center my-10 max-[992px]:my-12 max-[768px]:my-8 max-[480px]:my-5 w-full">
+      <img class="w-[50rem] max-[992px]:w-[40rem] max-[768px]:w-[30rem] max-[480px]:w-[20rem]" src="./img/start-end.png" alt="start-end date">
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-container flex flex-col justify-center items-center max-[992px]:scale-[0.85] max-[768px]:scale-[0.7] max-[480px]:scale-[0.4] max-[992px]:-my-16 max-[768px]:-my-32 max-[480px]:-my-60 w-ful">
+    <h3 class="text-[2rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.5rem] font-light text-center w-[60rem]">Going Live - Saturday, 10th March 2024, 09:00 AM EST</h3>
+    <div class="countdown flex justify-center items-start gap-4">
+      <div class="flex flex-col justify-center items-center">
+        <div class="days text-[#484646] text-[5rem] font-medium"></div>
+        <p class="text-[#A6A3A3] text-[1.5rem]">Days</p>
+      </div>
+      <div class="text-[#484646] text-[5rem] font-medium">:</div>
+      <div class="flex flex-col justify-center items-center">
+        <div class="hours text-[#484646] text-[5rem] font-medium"></div>
+        <p class="text-[#A6A3A3] text-[1.5rem]">Hours</p>
+      </div>
+      <div class="text-[#484646] text-[5rem] font-medium">:</div>
+      <div class="flex flex-col justify-center items-center">
+        <div class="minutes text-[#484646] text-[5rem] font-medium"></div>
+        <p class="text-[#A6A3A3] text-[1.5rem]">Minutes</p>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <div class="flex justify-center items-center">
+        <div class=" text-center flex justify-center items-center w-80">
+          <h3 class="text-[6rem] leading-[9rem]">DO <br> N'T</h3>
+        </div>
+        <div class="flex justify-center items-center gap-1">
+          <div class="">
+            <div class="h-[110px] w-[128px] bg-[#362DE9] drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]"></div>
+            <div class="h-[110px] w-[128px] bg-gradient-to-tl from-[#352CE8] to-[#807BE5]"></div>
+          </div>
+          <div class="">
+            <div class="h-[110px] w-[128px] bg-[#362DE9] drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]"></div>
+            <div class="h-[110px] w-[128px] bg-gradient-to-tl from-[#352CE8] to-[#807BE5]"></div>
+          </div>
+        </div>
+        <div class="text-center flex justify-center items-center text-[10rem] text-white absolute left-[334px]">
+          <div class="seconds-puluhan"></div>
+        </div>
+        <div class="text-center flex justify-center items-center text-[10rem] text-white absolute right-[334px]">
+          <div class="seconds-satuan"></div>
+        </div>
+        <div class="text-center flex justify-center items-center w-80">
+          <h3 class="text-[6rem] leading-[9rem]">MISS <br> IT!</h3>
+        </div>
+      </div>
+      <div class="text-center flex justify-center items-center text-[2rem] text-[#ADAAAA] absolute top-[256px] left-[324px] tracking-[1rem]">
+        <p>SECONDS</p>
+      </div>
+    </div>
+  </section>
+  <div class="get-it flex justify-center items-center w-full my-28">
+    <a class="flex justify-between items-center w-[292px] bg-[#352CE8] px-2 py-2 rounded-[50px] hover:scale-105 duration-200" href="../lead-magnet-sales-page/index.php">
+      <h3 class="text-white text-[2rem] pl-6">Get It NOW</h3>
+      <img width="20%" src="./img/arrow-get.png" alt="img">
+    </a>
+  </div>
+
+  <!-- About -->
+  <section class="flex flex-col justify-center items-center bg-[url('./img/bg-2.png')] bg-cover bg-no-repeat bg-fixed bg-center py-16 max-[768px]:py-12 max-[480px]:py-8">
+    <div class="text-center w-[80%] max-[992px]:w-[85%] max-[768px]:w-[90%]">
+      <h1 class="text-white text-[3rem] max-[768px]:text-[2.5rem] max-[480px]:text-[1.75rem] font-medium mb-5">Welcome to Lead Plus+</h1>
+      <h3 class="text-white text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.75rem] max-[768px]:-my-3 max-[480px]:-my-1 font-light">Where Your Journey to Building a Profitable Database Begins! Are you ready to take your business to the next level by harnessing the power of effective lead generation and database creation? With Lead Plus+, you'll gain access to cutting-edge tools and strategies designed to maximize your database's value and drive business growth.</h3>
+    </div>
+    <div class="flex justify-center items-center my-10 max-[992px]:my-8 max-[480px]:my-4">
+      <img class="w-[65%] max-[992px]:w-[80%]" src="./img/BoxMockup.png" alt="mockup">
+    </div>
+    <div class="flex flex-wrap justify-center items-start gap-20 max-[576px]:-my-10">
+      <!-- Frontend -->
+      <div class="flex flex-col justify-start items-center max-[992px]:scale-[1.25] max-[768px]:scale-[1] max-[480px]:scale-[0.8] max-[992px]:mt-20 max-[768px]:mt-0">
+        <button class="collapsible flex justify-between items-center bg-white rounded-[30px] w-[32rem] p-5 relative z-[2]">
+          <div class="flex justify-center items-center gap-2">
+            <img width="12%" src="./img/target.png" alt="target">
+            <div class="text-left">
+              <h3 class="text-[1.75rem] -tracking-[2px] -mb-2">Front End</h3>
+              <p class="-tracking-[1px]">There are 10 Modules at the Front End sales page:</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <img class="up-down-image" width="65%" src="./img/up-down-collapse.png" alt="up-down">
+          </div>
+        </button>
+        <div class="content w-[32rem] bg-[url('./img/frontend-container.png')] bg-cover bg-center bg-no-repeat rounded-[30px] relative z-[1] -mt-24">
+          <div class="mt-28 flex justify-center items-center gap-12">
+            <div class="flex flex-col justify-center items-center gap-3">
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Bakery</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Coffee Shop</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Barbershop</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Florist</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Nails Art</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-3">
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Toy Store</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Hair Salon</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Bike Store</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Pet Shop</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Food Catering</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center my-10">
+            <a class="flex justify-between items-center px-5 py-2 bg-gradient-to-r hover:bg-gradient-to-r from-[#fefaec] hover:from-[#FFF6D4] hover:via-[#FFF6D4] to-[#FFC90C] hover:to-[#fed953] rounded-[30px] duration-200 hover:scale-105" href="../lead-magnet-sales-page/index.php">
+              <p class="-tracking-[1px] font-medium text-[1rem]">Preview Of Sales Page</p>
+              <img width="15%" src="./img/arrow-link.png" alt="arrow link">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upsell -->
+      <div class="flex flex-col justify-start items-center max-[992px]:scale-[1.25] max-[768px]:scale-[1] max-[480px]:scale-[0.8] max-[992px]:my-32 max-[768px]:my-0 max-[480px]:-mt-32">
+        <button class="collapsible flex justify-between items-center bg-white rounded-[30px] w-[32rem] p-5 relative z-[2]">
+          <div class="flex justify-center items-center gap-2">
+            <img width="12%" src="./img/target.png" alt="target">
+            <div class="text-left">
+              <h3 class="text-[1.75rem] -tracking-[2px] -mb-2">Upsell</h3>
+              <p class="-tracking-[1px]">There are 15 Modules at the Upsell sales page:</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <img class="up-down-image" width="65%" src="./img/up-down-collapse.png" alt="up-down">
+          </div>
+        </button>
+        <div class="content w-[32rem] bg-[url('./img/upsell-container.png')] bg-cover bg-center bg-no-repeat rounded-[30px] relative z-[1] -mt-24">
+          <div class="mt-28 flex justify-center items-start gap-12">
+            <div class="flex flex-col justify-center items-center gap-3">
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Gym</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Electronic Store</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Outdoor Rental</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Cosmetics</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Seamstress</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Gift Shop/Souvenir</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Food Truck</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Vegetable Store</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-3">
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Music Store</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Fashion Boutique</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Bookstore</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Photo Studio</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Beauty Clinic</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Thrifting</p>
+              </div>
+              <div class="flex justify-start items-center gap-2 bg-white py-2 w-[13rem] rounded-[30px] pl-4">
+                <img src="./img/circle.png" alt="circle">
+                <p class="text-[1.15rem] font-normal -tracking-[1px]">Fruit Store</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center my-10">
+            <a class="flex justify-between items-center px-5 py-2 bg-gradient-to-r hover:bg-gradient-to-r from-[#fefaec] hover:from-[#FFF6D4] hover:via-[#FFF6D4] to-[#FFC90C] hover:to-[#fed953] rounded-[30px] duration-200 hover:scale-105" href="../lead-magnet-sales-page/index.php">
+              <p class="-tracking-[1px] font-medium text-[1rem]">Preview Of Sales Page</p>
+              <img width="15%" src="./img/arrow-link.png" alt="arrow link">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-[80%] max-[768px]:w-[85%] max-[480px]:w-[90%]">
+      <p class="p-class text-center text-white text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.75rem] mt-[10rem] max-[768px]:mt-8 max-[480px]:-my-5">Whether you're a seasoned entrepreneur or just starting your business journey, Lead Plus+ provides you with the resources and insights you need to succeed in today's competitive marketplace. Don't miss out on this incredible opportunity to transform your business and unlock untapped growth potential. Dive into Lead Plus+ and our exclusive e-book today and start building a profitable database that drives results!"</p>
+    </div>
+    <div class="md:w-[80%] max-[576px]:w-[90%] mt-16 mb-8">
+      <h3 class="text-center text-white text-[2.5rem] max-[992px]:text-[2rem] max-[768px]:text-[1.5rem] max-[480px]:text-[1.1rem] font-semibold">Here are some specific examples of how can be used by different professions:</h3>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-5 px-24 max-[768px]:px-10 max-[480px]:px-1">
+      <div class="grid grid-cols-2 max-[992px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1 gap-5">
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/user.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">E-commerce Entrepreneurs</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Enhance customer engagement and boost sales by leveraging Lead Plus+ to create targeted landing pages and capture valuable customer data, helping you build a robust and profitable database.</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/language.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">Digital Marketers</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Streamline your lead generation efforts and optimize your marketing campaigns with Lead Plus+ advanced tools and strategies, ensuring you capture high-quality leads that convert.</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/shop.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">Small Business Owners</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Expand your customer base and improve customer retention by utilizing Lead Plus+ to create personalized marketing campaigns and build a comprehensive database of loyal customers.</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/user2.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">Freelance</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Offer additional value to your clients by integrating Lead Plus+ into your consulting services, helping them optimize their lead generation strategies and build a profitable database.</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/group.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">Affiliate Marketers</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Maximize your affiliate commissions and track your performance effectively by using Lead Plus+ to capture and analyze valuable customer data, enabling you to refine your marketing strategies for better results</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 py-2 bg-[#352CE8] rounded-[50px] px-8 max-[480px]:px-5 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img class="w-[3rem] max-[480px]:w-[3.25rem]" src="./img/internet.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[16px] max-[768px]:leading-[1.15rem]">Bloggers and Content Creators</h3>
+            <p class="text-[12px] max-[768px]:leading-[1rem] mt-1">Monetize your blog or website by creating targeted landing pages with Lead Plus+, capturing visitor information, and building a valuable database of subscribers interested in your content and offerings.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="flex justify-center items-center gap-8">
+        <div class="flex justify-center items-center bg-[#352CE8] rounded-[50px] w-[40rem] px-8 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img src="./img/archive.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+            <p class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center bg-[#352CE8] rounded-[50px] w-[40rem] px-8 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img src="./img/archive.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+            <p class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-8">
+        <div class="flex justify-center items-center bg-[#352CE8] rounded-[50px] w-[40rem] px-8 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img src="./img/archive.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+            <p class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center bg-[#352CE8] rounded-[50px] w-[40rem] px-8 drop-shadow-[1px_2px_5px_rgba(0,0,0,0.3)]">
+          <img src="./img/archive.png" alt="">
+          <div class="text-white">
+            <h3 class="font-bold text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
+            <p class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Preview -->
+  <section class="relative z-[6]">
+    <div class="flex flex-col justify-center items-center w-full bg-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] rounded-b-[20px] h-[10rem]">
+      <h1 class="text-[3.5rem] max-[768px]:text-[3rem] max-[480px]:text-[2.5rem] -tracking-[1px] leading-[3.25rem]">Preview</h1>
+      <h3 class="text-[1.5rem] max-[768px]:text-[1.25rem] max-[480px]:text-[1rem] -tracking-[1px] font-light">Here our preview products</h3>
+    </div>
+  </section>
+
+  <!-- Module -->
+  <section>
+    <!-- Module 1 -->
+    <div class="relative z-[5] -mt-10 max-[992px]:-mt-8 max-[768px]:-mt-3 max-[480px]:mt-0 py-16 max-[992px]:py-12 max-[768px]:py-6 max-[480px]:py-4 pb-28 max-[992px]:pb-28 max-[768px]:pb-28 max-[480px]:pb-24 px-20 max-[992px]:px-16 max-[768px]:px-8 max-[480px]:px-6 bg-[url('./img/bg-preview-white.png')] bg-center bg-no-repeat bg-cover bg-fixed rounded-b-[20px]">
+      <div class="flex justify-start items-center md:gap-5 max-[576px]:gap-3 mt-5">
+        <img class="min-[992px]:w-[3.5rem] md:w-[3rem] max-[576px]:w-[2.25rem]" src="./img/arrow-module1.png" alt="img">
+        <h3 class="min-[992px]:text-[3.5rem] md:text-[2.5rem] max-[576px]:text-[1.5rem] -tracking-[1px]">Outdoor Gear Rental Shops</h3>
+      </div>  
+      <div class="grid place-items-center mt-10 max-[992px]:mt-5 max-[768px]:mt-3 max-[480px]:mt-0">
+        <div class="grid grid-cols-2 max-[1024px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1">
+          <div class="grid grid-rows-2">
+            <div class="bg-[url('./img/desc-container1.svg')] bg-center bg-cover bg-no-repeat w-[43.5rem] h-[18rem] max-[992px]:w-[52.3rem] max-[992px]:h-[21.5rem] max-[768px]:w-[43.5rem] max-[768px]:h-[18rem] max-[480px]:w-[27rem] max-[480px]:h-[11.3rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-white my-5">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem] mb-2">Landing Page</h3>
+              <div class="grid grid-cols-1">
+                <img src="./img/outdoor.png" alt="">
+              </div>
+            </div>
+            <div class="bg-[url('./img/desc-container2.svg')] bg-center bg-cover bg-no-repeat w-[43.3rem] h-[16.5rem] max-[992px]:w-[52rem] max-[992px]:h-[20rem] max-[768px]:w-[43.3rem] max-[768px]:h-[16.5rem] max-[480px]:w-[27rem] max-[480px]:h-[10.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-slate-800">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem]">E-Book & Cover</h3>
+              <p class="font-light max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.6rem]">The e-book 'Comprehensive Guide to Renting Outdoor Gear for Various Activities' is a complete guide for adventurers who want to explore nature by renting outdoor equipment. This book provides detailed information about the types of equipment needed for each activity, tips for choosing a trusted rental provider, and a practical guide to preparing yourself before leaving. This e-book is a trusted resource for anyone who wants to enjoy outdoor adventures without having to have all their own equipment.</p>
+            </div>
+          </div>
+          <div class="w-full grid place-items-center">
+            <img class="w-[35rem] max-[992px]:w-[45rem] max-[768px]:w-[33rem] max-[480px]:w-[20rem]" src="./img/outdoor-mockup.png" alt="">
+          </div>
+        </div>
+        <div class="mt-10">
+          <img class="w-[70rem]" src="./img/TOC-outdoor.png" alt="">
+        </div>
+        <div class="w-full grid place-items-center mt-10">
+          <img class="w-[70rem] max-[992px]:w-[50rem] max-[768px]:w-[40rem] max-[480px]:w-[30rem]" src="./img/preview-outdoor.png" alt="preview">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Module 2 -->
+    <div class="relative z-[5] -mt-10 py-16 max-[992px]:py-12 max-[768px]:py-6 max-[480px]:py-4 pb-28 max-[992px]:pb-28 max-[768px]:pb-28 max-[480px]:pb-24 px-20 max-[992px]:px-16 max-[768px]:px-8 max-[480px]:px-6 bg-[url('./img/bg-preview-blue.png')] bg-center bg-no-repeat bg-cover bg-fixed rounded-b-[20px]">
+      <div class="flex justify-start items-center md:gap-5 max-[576px]:gap-3 mt-5">
+        <img class="min-[992px]:w-[3.5rem] md:w-[3rem] max-[576px]:w-[2.25rem]" src="./img/arrow-module1.png" alt="img">
+        <h3 class="text-white min-[992px]:text-[3.5rem] md:text-[2.5rem] max-[576px]:text-[1.5rem] -tracking-[1px]">Pet Shops</h3>
+      </div>  
+      <div class="grid place-items-center mt-10 max-[992px]:mt-5 max-[768px]:mt-3 max-[480px]:mt-0">
+        <div class="grid grid-cols-2 max-[1024px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1">
+          <div class="w-full grid place-items-center">
+            <img class="w-[35rem] max-[992px]:w-[45rem] max-[768px]:w-[33rem] max-[480px]:w-[20rem] max-[768px]:mt-10 max-[480px]:mt-3" src="./img/petshop-mockup.png" alt="">
+          </div>
+          <div class="grid grid-rows-2">
+            <div class="bg-[url('./img/desc-container3.svg')] bg-center bg-cover bg-no-repeat w-[43rem] h-[18rem] max-[992px]:w-[52.3rem] max-[992px]:h-[22rem] max-[768px]:w-[43.5rem] max-[768px]:h-[18.15rem] max-[480px]:w-[27rem] max-[480px]:h-[11.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify my-5">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem] mb-2">Landing Page</h3>
+              <div class="grid grid-cols-1">
+                <img src="./img/petshop.png" alt="">
+              </div>
+            </div>
+            <div class="bg-[url('./img/desc-container4.svg')] bg-center bg-cover bg-no-repeat w-[43rem] h-[16.3rem] max-[992px]:w-[52rem] max-[992px]:h-[20rem] max-[768px]:w-[43.3rem] max-[768px]:h-[16.5rem] max-[480px]:w-[27rem] max-[480px]:h-[10.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-slate-800">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem]">E-Book & Cover</h3>
+              <p class="font-light max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.6rem]">Secrets of Loving Pet Care: A Practical Guide for Pet Owners" is a comprehensive and easy-to-understand guide for pet owners to better care for and love their beloved pets. With practical tips and expert advice, this book delves into the secrets of caring for pets of all types, from dogs and cats to birds and reptiles. From choosing the right food to effective exercise, readers will be guided to build a strong, healthy relationship with their pets, ensuring their long-term happiness and well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <img class="w-[70rem]" src="./img/TOC-petshop.png" alt="">
+        </div>
+        <div class="w-full grid place-items-center mt-10 max-[992px]:-mt-10">
+          <img class="w-[70rem] max-[992px]:w-[50rem] max-[768px]:w-[40rem] max-[480px]:w-[30rem]" src="./img/preview-petshop.png" alt="preview">
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="relative z-[5] -mt-10 max-[992px]:-mt-8 max-[768px]:-mt-3 max-[480px]:mt-0 py-16 max-[992px]:py-12 max-[768px]:py-6 max-[480px]:py-4 pb-28 max-[992px]:pb-28 max-[768px]:pb-28 max-[480px]:pb-24 px-20 max-[992px]:px-16 max-[768px]:px-8 max-[480px]:px-6 bg-[url('./img/bg-preview-white.png')] bg-center bg-no-repeat bg-cover bg-fixed rounded-b-[20px]">
+      <div class="flex justify-start items-center md:gap-5 max-[576px]:gap-3 mt-5">
+        <img class="min-[992px]:w-[3.5rem] md:w-[3rem] max-[576px]:w-[2.25rem]" src="./img/arrow-module1.png" alt="img">
+        <h3 class="min-[992px]:text-[3.5rem] md:text-[2.5rem] max-[576px]:text-[1.5rem] -tracking-[1px]">Bakery</h3>
+      </div>  
+      <div class="grid place-items-center mt-10 max-[992px]:mt-5 max-[768px]:mt-3 max-[480px]:mt-0">
+        <div class="grid grid-cols-2 max-[1024px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1">
+          <div class="grid grid-rows-2">
+            <div class="bg-[url('./img/desc-container1.svg')] bg-center bg-cover bg-no-repeat w-[43.5rem] h-[18rem] max-[992px]:w-[52.3rem] max-[992px]:h-[21.5rem] max-[768px]:w-[43.5rem] max-[768px]:h-[18rem] max-[480px]:w-[27rem] max-[480px]:h-[11.3rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-white my-5">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem] mb-2">Landing Page</h3>
+              <div class="grid grid-cols-1">
+                <img src="./img/bakery.png" alt="">
+              </div>
+            </div>
+            <div class="bg-[url('./img/desc-container2.svg')] bg-center bg-cover bg-no-repeat w-[43.3rem] h-[16.5rem] max-[992px]:w-[52rem] max-[992px]:h-[20rem] max-[768px]:w-[43.3rem] max-[768px]:h-[16.5rem] max-[480px]:w-[27rem] max-[480px]:h-[10.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-slate-800">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem]">E-Book & Cover</h3>
+              <p class="font-light max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.6rem]">Craving Cake? Bake It Yourself with This Easy Recipe Book! Got a sweet tooth? This book's got you covered!  Whip up over 100 yummy cakes and treats,  No fancy chef skills required!  The recipes are super simple and come with handy tips to make sure they turn out perfect every time. First-time baker? No problem! This book is your new best friend in the kitchen. </p>
+            </div>
+          </div>
+          <div class="w-full grid place-items-center">
+            <img class="w-[35rem] max-[992px]:w-[45rem] max-[768px]:w-[33rem] max-[480px]:w-[20rem]" src="./img/bakery-mockup.png" alt="">
+          </div>
+        </div>
+        <div class="mt-10">
+          <img class="w-[70rem]" src="./img/TOC-bakery.png" alt="">
+        </div>
+        <div class="w-full grid place-items-center mt-10">
+          <img class="w-[70rem] max-[992px]:w-[50rem] max-[768px]:w-[40rem] max-[480px]:w-[30rem]" src="./img/preview-bakery.png" alt="preview">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Module 4 -->
+    <div class="relative z-[5] -mt-10 py-16 max-[992px]:py-12 max-[768px]:py-6 max-[480px]:py-4 pb-28 max-[992px]:pb-28 max-[768px]:pb-28 max-[480px]:pb-24 px-20 max-[992px]:px-16 max-[768px]:px-8 max-[480px]:px-6 bg-[url('./img/bg-preview-blue.png')] bg-center bg-no-repeat bg-cover bg-fixed rounded-b-[20px]">
+      <div class="flex justify-start items-center md:gap-5 max-[576px]:gap-3 mt-5">
+        <img class="min-[992px]:w-[3.5rem] md:w-[3rem] max-[576px]:w-[2.25rem]" src="./img/arrow-module1.png" alt="img">
+        <h3 class="text-white min-[992px]:text-[3.5rem] md:text-[2.5rem] max-[576px]:text-[1.5rem] -tracking-[1px]">Souvenir</h3>
+      </div>  
+      <div class="grid place-items-center mt-10 max-[992px]:mt-5 max-[768px]:mt-3 max-[480px]:mt-0">
+        <div class="grid grid-cols-2 max-[1024px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1">
+          <div class="w-full grid place-items-center">
+            <img class="w-[35rem] max-[992px]:w-[45rem] max-[768px]:w-[33rem] max-[480px]:w-[20rem]" src="./img/souvenir-mockup.png" alt="">
+          </div>
+          <div class="grid grid-rows-2">
+            <div class="bg-[url('./img/desc-container3.svg')] bg-center bg-cover bg-no-repeat w-[43rem] h-[18rem] max-[992px]:w-[52.3rem] max-[992px]:h-[22rem] max-[768px]:w-[43.5rem] max-[768px]:h-[18.15rem] max-[480px]:w-[27rem] max-[480px]:h-[11.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify my-5">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem] mb-2">Landing Page</h3>
+              <div class="grid grid-cols-1">
+                <img src="./img/souvenir.png" alt="">
+              </div>
+            </div>
+            <div class="bg-[url('./img/desc-container4.svg')] bg-center bg-cover bg-no-repeat w-[43rem] h-[16.3rem] max-[992px]:w-[52rem] max-[992px]:h-[20rem] max-[768px]:w-[43.3rem] max-[768px]:h-[16.5rem] max-[480px]:w-[27rem] max-[480px]:h-[10.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-slate-800">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem]">E-Book & Cover</h3>
+              <p class="font-light max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.6rem]">This book unlocks the secrets to launching a souvenir shop with unique products that stand out from the crowd and keep the sales ringing. Start your journey to souvenir success today!  This easy-to-understand guide provides actionable steps to get you started right away. Don't wait – order your copy now!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <img class="w-[70rem]" src="./img/TOC-souvenir.png" alt="">
+        </div>
+        <div class="w-full grid place-items-center mt-10 max-[992px]:-mt-10">
+          <img class="w-[70rem] max-[992px]:w-[50rem] max-[768px]:w-[40rem] max-[480px]:w-[30rem]" src="./img/preview-souvenir.png" alt="preview">
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="relative z-[5] -mt-10 max-[992px]:-mt-8 max-[768px]:-mt-3 max-[480px]:mt-0 py-16 max-[992px]:py-12 max-[768px]:py-6 max-[480px]:py-4 pb-28 max-[992px]:pb-28 max-[768px]:pb-28 max-[480px]:pb-24 px-20 max-[992px]:px-16 max-[768px]:px-8 max-[480px]:px-6 bg-[url('./img/bg-preview-white.png')] bg-center bg-no-repeat bg-cover bg-fixed rounded-b-[20px]">
+      <div class="flex justify-start items-center md:gap-5 max-[576px]:gap-3 mt-5">
+        <img class="min-[992px]:w-[3.5rem] md:w-[3rem] max-[576px]:w-[2.25rem]" src="./img/arrow-module1.png" alt="img">
+        <h3 class="min-[992px]:text-[3.5rem] md:text-[2.5rem] max-[576px]:text-[1.5rem] -tracking-[1px]">Florist</h3>
+      </div>  
+      <div class="grid place-items-center mt-10 max-[992px]:mt-5 max-[768px]:mt-3 max-[480px]:mt-0">
+        <div class="grid grid-cols-2 max-[1024px]:grid-cols-1 max-[768px]:grid-cols-1 max-[480px]:grid-cols-1">
+          <div class="grid grid-rows-2">
+            <div class="bg-[url('./img/desc-container1.svg')] bg-center bg-cover bg-no-repeat w-[43.5rem] h-[18rem] max-[992px]:w-[52.3rem] max-[992px]:h-[21.5rem] max-[768px]:w-[43.5rem] max-[768px]:h-[18rem] max-[480px]:w-[27rem] max-[480px]:h-[11.3rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-white my-5">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem] mb-2">Landing Page</h3>
+              <div class="grid grid-cols-1">
+                <img src="./img/florist.png" alt="">
+              </div>
+            </div>
+            <div class="bg-[url('./img/desc-container2.svg')] bg-center bg-cover bg-no-repeat w-[43.3rem] h-[16.5rem] max-[992px]:w-[52rem] max-[992px]:h-[20rem] max-[768px]:w-[43.3rem] max-[768px]:h-[16.5rem] max-[480px]:w-[27rem] max-[480px]:h-[10.25rem] flex flex-col justify-center items-start px-10 max-[768px]:px-8 max-[480px]:px-6 text-justify text-slate-800">
+              <h3 class="text-[2rem] max-[480px]:text-[1rem]">E-Book & Cover</h3>
+              <p class="font-light max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.6rem]">This easy-to-follow guide equips you with everything you need to know, from finding your niche and crafting a winning business plan to opening your doors. Perfect for beginners, entrepreneurs, and flower enthusiasts! This book is your ticket to becoming a floral mastermind.  Order now and unlock bonus content!</p>
+            </div>
+          </div>
+          <div class="w-full grid place-items-center">
+            <img class="w-[35rem] max-[992px]:w-[45rem] max-[768px]:w-[33rem] max-[480px]:w-[20rem]" src="./img/florist-mockup.png" alt="">
+          </div>
+        </div>
+        <div class="mt-10">
+          <img class="w-[70rem]" src="./img/TOC-florist.png" alt="">
+        </div>
+        <div class="w-full grid place-items-center mt-10">
+          <img class="w-[70rem] max-[992px]:w-[50rem] max-[768px]:w-[40rem] max-[480px]:w-[30rem]" src="./img/preview-florist.png" alt="preview">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Affiliate Contest -->
+  <section id="contest" class="w-full flex flex-col justify-center items-center py-16 px-20 max-[480px]:px-10">
+    <div class="text-center w-[70%] max-[992px]:w-[90%] max-[768px]:w-[100%]">
+      <h1 class="text-[3rem] max-[992px]:text-[2.5rem] max-[768px]:text-[2rem] max-[480px]:text-[1.5rem] mb-4 max-[992px]:mb-2 max-[768px]:mb-1">Affiliate Contest</h1>
+      <h3 class="font-light text-[1.2rem] max-[992px]:text-[1rem] max-[768px]:text-[0.8rem] max-[480px]:text-[0.6rem]">By promoting our product, you are not only get instant commission but also you can win extra cash from contest prize! The Affiliate Contest is 5 days, starting from 6 April 2024 at 9 am est and end 11 April 2024 at 12 am est.</h3>
+    </div>
+    <div class="w-[50rem] max-[992px]:w-[40rem] max-[769px]:w-[30rem] max-[480px]:w-[20rem] my-12 max-[992px]:my-10 max-[768px]:my-6 max-[480px]:my-5">
+      <img src="./img/champions.png" alt="champions">
+    </div>
+    <div class="w-[40rem] max-[992px]:w-[30rem] max-[769px]:w-[25rem] max-[480px]:w-[15rem] mb-10 max-[992px]:mb-8 max-[768px]:mb-5 max-[480px]:mb-3">
+      <img src="./img/position-desc.png" alt="position">
+    </div>
+    <div class="text-center w-[60%] max-[992px]:w-[80%] max-[768px]:w-[90%] font-extralight text-[1.15rem] max-[992px]:text-[1rem] max-[768px]:text-[0.8rem] max-[480px]:text-[0.6rem]">
+      <p class="mb-4">If minimun sales for prize position #1 and #2 are not met, then only prizes 3, 4 and 5 will be delivered to top affilaites</p>
+      <p>Teams of up to 2 are allowed for the contest. The leaderboard will be based on the front end sales during <span class="font-semibold">5 days</span> launch ending on <span class="font-semibold">14 March 2024</span> midnight at 23:59 EST.</p>
+    </div>
+  </section>
+
+  <!-- Sales Funnel -->
+  <section class="bg-[url('./img/bg-4.png')] bg-cover bg-center bg-no-repeat w-full flex flex-col justify-center items-center py-16 px-20 max-[992px]:px-16 max-[480px]:px-12">
+    <div class="text-center w-[60%] max-[992px]:w-[80%] max-[768px]:w-[90%] max-[468px]:w-[100%] text-white max-[992px]:-my-3 max-[768px]:-my-5 max-[480px]:-my-8">
+      <h1 class="text-[3rem] max-[992px]:text-[2.5rem] max-[768px]:text-[2.25rem] max-[480px]:text-[1.75rem] mb-1">Sales Funnel</h1>
+      <h3 class="font-light text-[1.15rem] max-[992px]:text-[1rem] max-[768px]:text-[0.8rem] max-[480px]:text-[0.5rem]">Our sales funnel will generate more profit for you, enjoy multiple commission from our high converting sales funnel.</h3>
+    </div>
+    <div class="grid grid-rows-1 grid-cols-4 px-24 max-[992px]:px-10 max-[768px]:px-0 gap-4 max-[992px]:gap-2 mt-10">
+      <div class="">
+        <img src="./img/frontend.png" alt="">
+      </div>
+      <div class="">
+        <img src="./img/upsell.png" alt="">
+      </div>
+      <div class="">
+        <img src="./img/downsell.png" alt="">
+      </div>
+      <div class="">
+        <img src="./img/upsell2.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Affiliate Link & Promotion Tools -->
+  <section class="bg-[url('./img/bg-5.png')] bg-cover bg-center bg-no-repeat bg-fixed py-16">
+    <!-- Affiliate Link -->
+    <div id="affiliate" class="flex flex-col justify-center items-center">
+      <div class="text-center">
+        <h1 class="text-[3rem] max-[992px]:text-[3rem] max-[768px]:text-[2.75rem] max-[480px]:text-[2rem] leading-[3.5rem] max-[992px]:leading-[3rem] max-[768px]:leading-[2.75rem] max-[480px]:leading-[2rem]">Affiliate Link</h1>
+        <h3 class="font-light text-[1.25rem] max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] -tracking-[1px]">Get Your Affiliate Link Now</h3>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
+        <div class="flex flex-col justify-center items-center bg-[url('./img/affiliate-form.svg')] bg-cover bg-center bg-no-repeat pt-12 w-[36.25rem] h-[25.5rem] max-[992px]:w-[48.75rem] max-[992px]:h-[34.4rem] max-[768px]:w-[36.25rem] max-[768px]:h-[25.5rem] max-[480px]:w-[22rem] max-[480px]:h-[15.5rem] rounded-[20px] drop-shadow-[3px_3px_3px_rgba(0,0,0,0.4)]">
+          <div class="text-center text-white mb-5 max-[992px]:mb-7 max-[480px]:mb-3 max-[992px]:mt-5 max-[480px]:-mt-5">
+            <h3 class="text-[2.5rem] max-[992px]:text-[3rem] max-[768px]:text-[2.25rem] max-[480px]:text-[1.5rem] -tracking-[1px]">Subscribe</h3>
+            <p class="max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.7rem] font-light -tracking-[1px] max-[480px]:-tracking-[0.5px]">Submit your email to get update on launch and update information</p>
+          </div>
+          <form class="flex flex-col justify-center items-start w-[36.25rem] max-[992px]:w-[48.75rem] max-[768px]:w-[36.25rem] max-[480px]:w-[22rem] h-full bg-white px-10 max-[480px]:px-5 rounded-[20px]">
+            <label for="name" class="font-medium text-[1.25rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] mb-1 max-[992px]:mb-2 max-[768px]:mb-1 max-[480px]:mb-[2px]">Name</label>
+            <input class="max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] border-[1px] border-[#352CE2] rounded-[30px] w-full px-3 max-[992px]:px-4 max-[768px]:px-3 max-[480px]:px-2 py-2 max-[992px]:py-3 max-[768px]:py-2 max-[480px]:py-1 mb-2 max-[992px]:mb-3 max-[768px]:mb-2 max-[480px]:mb-1" type="text" placeholder="Your Name" required>
+            <label for="email" class="font-medium text-[1.25rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] mb-1 max-[992px]:mb-2 max-[768px]:mb-1 max-[480px]:mb-[2px]">Email</label>
+            <input class="max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] border-[1px] border-[#352CE2] rounded-[30px] w-full px-3 max-[992px]:px-4 max-[768px]:px-3 max-[480px]:px-2 py-2 max-[992px]:py-3 max-[768px]:py-2 max-[480px]:py-1" type="email" placeholder="Your Email" required>
+            <div class="w-full mt-5 max-[992px]:mt-6 max-[768px]:mt-3 max-[480px]:mt-2">
+              <button class="bg-[#352CE2] text-white float-end text-[1.5rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] -tracking-[1px] px-8 max-[992px]:px-10 max-[768px]:px-8 max-[480px]:px-5 py-1 max-[992px]:py-2 max-[768px]:py-1 max-[480px]:py-[2px] rounded-[20px] hover:bg-white hover:text-[#352CE2] hover:border-[#352CE2] hover:border-[1px] duration-200 mr-0">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-3 px-20">
+          <img class="w-[25rem] max-[992px]:w-[35rem] max-[768px]:w-[25rem] max-[480px]:w-[18rem]" src="./img/affiliate-element.png" alt="">
+          <a href="#" class="flex justify-between items-center pl-4 pr-1 py-1 rounded-[30px] w-[16rem] max-[992px]:w-[21rem] max-[768px]:w-[16rem] max-[480px]:w-[12rem] bg-gradient-to-r hover:bg-gradient-to-r from-[#fefaec] hover:from-[#FFF6D4] hover:via-[#FFF6D4] to-[#FFC90C] hover:to-[#fed953] duration-200 hover:scale-105">
+            <p class="text-[1.15rem] max-[992px]:text-[1.5rem] max-[768px]:text-[1.15rem] max-[480px]:text-[0.8rem]">Get Your Affiliate Link</p>
+            <img width="12%" src="./img/arrow-get.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Promotion Tools -->
+    <!-- <div id="promotion" class="flex flex-col justify-center items-center mt-20">
+      <div class="text-center w-[70%] max-[992px]:w-[80%] max-[768px]:w-[85%]">
+        <h1 class="text-[3rem] max-[768px]:text-[2.75rem] max-[480px]:text-[2rem] leading-[3.5rem] max-[992px]:leading-[3.5rem] max-[768px]:leading-[2.75rem] max-[480px]:leading-[2rem]">Promotion Tools</h1>
+        <h3 class="font-light text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] -tracking-[1px]">We provide you with complete promotion tools, such as email swipes, Bonus page html, auto generate bonus page, promotion banner and more, use this promotion tools to save your valuable time.</h3>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-10 mt-10">
+        <div class="flex flex-col justify-center items-center gap-3 px-20">
+          <img class="w-[25rem] max-[992px]:w-[35rem] max-[768px]:w-[25rem] max-[480px]:w-[18rem]" src="./img/bonus-element.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center bg-[url('./img/bonus-form.svg')] bg-cover bg-center bg-no-repeat pt-12 max-[992px]:pt-16 max-[768px]:pt-12 max-[480px]:pt-6 w-[600px] h-[532px] max-[992px]:w-[48rem] max-[992px]:h-[42.73rem] max-[768px]:w-[36.5rem] max-[768px]:h-[32.5rem] max-[480px]:w-[23rem] max-[480px]:h-[20.4rem] rounded-[20px] max-[480px]:rounded-[10px] drop-shadow-[3px_3px_3px_rgba(0,0,0,0.4)] pr-4">
+          <div class="text-center mb-5 mx-10 max-[480px]:mx-5">
+            <h3 class="text-[2.5rem] max-[992px]:text-[3rem] max-[768px]:text-[2.25rem] max-[480px]:text-[1.5rem] -tracking-[1px]">Bonus Page Generator</h3>
+            <p class="max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.7rem] font-extralight -tracking-[1px] my-3 max-[480px]:my-1">This is bonuspage generator, you can automatically generate bonuspage by inserting your name and affiliate link bellow.</p>
+            <p class="max-[992px]:text-[1.15rem] max-[768px]:text-[1rem] max-[480px]:text-[0.7rem] -tracking-[1px]">After inserting and submit the name and afflink, you will be redirected to bonus page, copy the url and start promoting ReelFire using the url link.</p>
+          </div>
+          <form class="flex flex-col justify-center items-start w-[585px] max-[992px]:w-[46.9rem] max-[768px]:w-[35.7rem] max-[480px]:w-[22.45rem] max-[992px]:-ml-1 max-[768px]:ml-0 max-[480px]:ml-[6px] h-full bg-white px-10 rounded-[20px] max-[480px]:rounded-[10px]">
+            <label for="name" class="font-medium ext-[1.25rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] mb-1 max-[992px]:mb-2 max-[768px]:mb-1 max-[480px]:mb-[2px]">Insert Your Name</label>
+            <input class="max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] border-[1px] border-[#FF83FF] rounded-[30px] w-full px-3 max-[992px]:px-4 max-[768px]:px-3 max-[480px]:px-2 py-2 max-[992px]:py-3 max-[768px]:py-2 max-[480px]:py-1 mb-2 max-[992px]:mb-3 max-[768px]:mb-2 max-[480px]:mb-1" type="text" placeholder="Your Name" required>
+            <label for="link" class="font-medium ext-[1.25rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] mb-1 max-[992px]:mb-2 max-[768px]:mb-1 max-[480px]:mb-[2px]">Insert Your Affiliate Link</label>
+            <input class="max-[992px]:text-[1.25rem] max-[768px]:text-[1rem] max-[480px]:text-[0.8rem] border-[1px] border-[#FF83FF] rounded-[30px] w-full px-3 max-[992px]:px-4 max-[768px]:px-3 max-[480px]:px-2 py-2 max-[992px]:py-3 max-[768px]:py-2 max-[480px]:py-1" type="text" placeholder="Your Affiliate Link" required>
+            <div class="w-full mt-5 max-[992px]:mt-8 max-[768px]:mt-5 max-[480px]:mt-3">
+              <button class="bg-[#FF83FF] float-end text-[1.5rem] max-[992px]:text-[1.75rem] max-[768px]:text-[1.25rem] max-[480px]:text-[0.9rem] -tracking-[1px] px-8 max-[992px]:px-10 max-[768px]:px-8 max-[480px]:px-5 py-1 max-[992px]:py-2 max-[768px]:py-1 max-[480px]:py-[2px] rounded-[20px] hover:bg-white hover:text-[#FF83FF] hover:border-[#FF83FF] hover:border-[1px] duration-200">Generate Bonus Page</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-5 max-[768px]:gap-4 max-[480px]:gap-3 mt-10">
+        <a href="#" class="flex justify-between items-center pl-4 pr-1 py-1 rounded-[30px] w-[16rem] max-[480px]:w-[11rem] bg-gradient-to-r from-[#FFE895] to-[#FFC90C]">
+          <p class="text-[1.15rem] max-[480px]:text-[0.75rem]">Get Your Affiliate Link</p>
+          <img width="12%" src="./img/arrow-get.png" alt="">
+        </a>
+        <a href="#" class="flex justify-between items-center pl-4 pr-1 py-1 rounded-[30px] w-[16rem] max-[480px]:w-[11rem] bg-gradient-to-r from-[#FFE895] to-[#FFC90C]">
+          <p class="text-[1.15rem] max-[480px]:text-[0.75rem]">Get Your Affiliate Link</p>
+          <img width="12%" src="./img/arrow-get.png" alt="">
+        </a>
+        <a href="#" class="flex justify-between items-center pl-4 pr-1 py-1 rounded-[30px] w-[16rem] max-[480px]:w-[11rem] bg-gradient-to-r from-[#FFE895] to-[#FFC90C]">
+          <p class="text-[1.15rem] max-[480px]:text-[0.75rem]">Get Your Affiliate Link</p>
+          <img width="12%" src="./img/arrow-get.png" alt="">
+        </a>
+        <a href="#" class="flex justify-between items-center pl-4 pr-1 py-1 rounded-[30px] w-[16rem] max-[480px]:w-[11rem] bg-gradient-to-r from-[#FFE895] to-[#FFC90C]">
+          <p class="text-[1.15rem] max-[480px]:text-[0.75rem]">Get Your Affiliate Link</p>
+          <img width="12%" src="./img/arrow-get.png" alt="">
+        </a>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Terms and Conditions -->
+  <section class="bg-[url('./img/bg-6.png')] bg-cover bg-center bg-no-repeat bg-fixed py-16 px-20 max-[768px]:px-12 max-[480px]:px-8">
+    <div class="flex justify-center items-center text-white w-full">
+      <h1 class="text-center text-[3rem] max-[992px]:text-[2.5rem] max-[768px]:text-[2rem] max-[480px]:text-[1.25rem] -tracking-[1px]">Affiliate Promotion Terms & Conditions</h1>
+    </div>
+    <div class="flex flex-wrap justify-center items-center mt-12 mx-10 max-[992px]:mx-5 max-[480px]:mx-2">
+      <div class="text-white w-[60%] max-[992px]:w-full">
+        <p class="text-[1.15rem] max-[480px]:text-[0.9rem]">Before joining this affiliate program, please read carefully and agree to the following rules:</p>
+        <div class="mt-2 flex flex-col justify-center items-start gap-2">
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">You cannot use a 3rd party system to send email promotions. All email contacts must be your own opt-in email list.</p>
+          </div>
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">You cannot use paid to click traffic, click exchange traffic, cheap traffic, or any other junk traffic.</p>
+          </div>
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">You cannot run negative PPC or iframe domain campaigns. This creates a bad image for the company and will result in immediate termination from the program.
+            </p>
+          </div>
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">You cannot earn commission on your own purchases.
+              If you have a new affiliate account, your payments will be delayed until you have a good track record.</p>
+          </div>
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">You must accurately represent the product and its features and benefits to customers. Misleading claims, inaccurate information, or false testimonials will result in immediate termination from the program.</p>
+          </div>
+          <div class="flex justify-start items-start gap-2 font-light">
+            <img class="w-[1.5rem] max-[480px]:w-[1.15rem]" src="./img/disc.png" alt="disc">
+            <p class="max-[480px]:text-[0.7rem]">Bonuses from this page can only be used to promote ReelFire. You cannot re-use, re-sell, redistribute, copy, or edit any of the bonus content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-[40%] max-[992px]:w-full flex place-content-center">
+        <img class="w-[25rem] max-[992px]:w-[28rem] max-[480px]:w-[18rem] max-[992px]:mt-12" src="./img/terms-element.png" alt="img">
+      </div>
+    </div>
+  </section>
+
+  <script src="./jv.js"></script>
+</body>
+</html>

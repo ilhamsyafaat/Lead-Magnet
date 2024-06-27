@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+.inter-extrabold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+@media (max-width: 576px) {
+
+    /*HP*/
+    .font-3rem {
+        font-size: 2rem;
+    }
+
+    .font-2-5rem {
+        font-size: 1.8rem;
+    }
+
+    .font-2rem {
+        font-size: 1.5rem;
+    }
+
+    .font-0-8rem {
+        font-size: 0.9rem;
+    }
+
+    .font-1rem {
+        font-size: 1rem;
+    }
+
+    .font-1-2rem {
+        font-size: 1.1rem;
+    }
+
+    .font-1-5rem {
+        font-size: 1.2rem;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    #mockup-img {
+        width: 80%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    #btn-payment {
+        width: 90%;
+    }
+
+    .bg-rental-2 {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /*Laptop*/
+    .font-3rem {
+        font-size: 3rem;
+    }
+
+    .font-2-5rem {
+        font-size: 2.5rem;
+    }
+
+    .font-2rem {
+        font-size: 2rem;
+    }
+
+    .font-0-8rem {
+        font-size: 0.8rem;
+    }
+
+    .font-1rem {
+        font-size: 1rem;
+    }
+
+    .font-1-2rem {
+        font-size: 1.2rem;
+    }
+
+    .font-1-5rem {
+        font-size: 1.5rem;
+    }
+
+    .w-100 {
+        width: 80%;
+    }
+
+    #mockup-img {
+        width: 30%;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    #btn-payment {
+        width: 50%;
+    }
+
+    .bg-rental-2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.bg-1 {
+    background-image:
+        linear-gradient(to right, rgba(53, 44, 232, 0.8), rgba(53, 44, 232, 0.8)),
+        url(../img/bg-1.png);
+}
+
+.bg-2 {
+    background-image: url(../img/bg-2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-3 {
+    background-image:
+        linear-gradient( rgba(255, 255, 255, 0.3), rgba(53, 44, 232, 0.8),  rgba(30, 25, 130, 1)),
+        url(../img/bg-3.png);
+}
+
+.bg-5 {
+    background-image: linear-gradient(to left, rgba(53, 44, 232, 1), rgba(255, 255, 255, 0.3));
+}
+
+.bg-4 {
+    background-image: url(../img/bg-3.png);
+}
+
+.bg-card {
+    background-image: url(../img/bg-card.png);
+    background-size: cover;
+}
+
+.bg-payment {
+    background-image: url(../img/bg-payment.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.bg-payment-2 {
+    background-image: url(../img/bg-payment-2.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.bg-rental {
+    background-image: linear-gradient(to left, rgba(129, 122, 255, 1), rgba(255, 209, 255, 1));
+    border-radius: 1rem;
+}
+
+.bg-rental-2 {
+    background-image: linear-gradient(to left, rgba(255, 128, 255, 0.5), rgba(255, 192, 255, 1), rgba(255, 255, 255, 1));
+    border-radius: 1rem;
+}
+
+.image-toc {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+#blob {
+    position: relative;
+    width: 70%; 
+    height: auto; 
+    z-index: 1;
+}
